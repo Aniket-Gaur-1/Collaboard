@@ -1,0 +1,23 @@
+/* RoomContainer.css */
+
+.room-container {
+    padding: 1rem;
+    background: #f3f4f6;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.room-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .room-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

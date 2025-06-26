@@ -1,0 +1,45 @@
+.avatar-selector {
+    margin-bottom: 1rem;
+}
+
+.avatar-selector h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.avatar-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+}
+
+.avatar-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.avatar-image:hover {
+    border-color: #4b9cea;
+}
+
+.avatar-image.selected {
+    border-color: #2563eb;
+}
+
+.avatar-selected {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+.avatar-selected img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}

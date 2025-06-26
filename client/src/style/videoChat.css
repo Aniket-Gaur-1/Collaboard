@@ -1,0 +1,159 @@
+/* VideoChat.css */
+
+.video-chat-container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+.video-chat-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.video-chat-section h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.video-container {
+    position: relative;
+    width: 300px;
+    height: 225px;
+    background: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.video-container:hover {
+    transform: scale(1.02);
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.video-controls {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.video-controls button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.video-controls button:hover {
+    transform: translateY(-2px);
+}
+
+.video-controls button:active {
+    transform: translateY(0);
+}
+
+.video-controls .mic-button {
+    background: #22c55e;
+}
+
+.video-controls .mic-button.off {
+    background: #ef4444;
+}
+
+.video-controls .video-button {
+    background: #22c55e;
+}
+
+.video-controls .video-button.off {
+    background: #ef4444;
+}
+
+.video-controls .leave-button {
+    background: #ef4444;
+}
+
+.call-request-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background: #2563eb;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.call-request-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.call-request-button:disabled {
+    background: #6b7280;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.incoming-call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: #fef3c7;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.incoming-call p {
+    font-size: 1rem;
+    color: #713f12;
+    font-weight: 500;
+}
+
+.incoming-call button {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.incoming-call button:hover {
+    transform: translateY(-2px);
+}
+
+.incoming-call button:active {
+    transform: translateY(0);
+}
+
+.incoming-call .accept-button {
+    background: #22c55e;
+}
+
+.incoming-call .decline-button {
+    background: #ef4444;
+}
